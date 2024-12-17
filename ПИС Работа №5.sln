@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34024.191
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ПИС Работа №3", "ПСИ Работа №1\ПИС Работа №3.csproj", "{1961175A-A481-4EB6-A234-44D3E72CAC09}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ПИС Работа №5", "ПСИ Работа №1\ПИС Работа №5.csproj", "{1961175A-A481-4EB6-A234-44D3E72CAC09}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BussinesLogic", "Logic\BussinesLogic.csproj", "{E6101EB8-0651-47A9-A042-0E2A7845C003}"
 EndProject
