@@ -30,6 +30,18 @@ namespace Model
             }
             catch (Exception e) { Console.WriteLine($"Ошибка: {e.Message}\n"); }
         }
+
+        public override bool Equals(object obj)
+        {
+            if (obj == null || GetType() != obj.GetType()) { return false; }
+            MeterReadingWithCost other = (MeterReadingWithCost)obj;
+            return ResourceType == other.ResourceType && Date == other.Date && Value == other.Value && UnitCost == other.UnitCost && TotalCost == other.TotalCost;
+        }
+
+        public override int GetHashCode()
+        {
+            return ResourceType.GetHashCode() ^ Date.GetHashCode() ^ Value.GetHashCode();
+        }
     }
 }
 

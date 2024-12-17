@@ -26,5 +26,17 @@ namespace Model
                 $"Адрес: {Location}\n" +
                 $"Квартира: {ApartmentNumber}\n\n");
         }
+
+        public override bool Equals(object obj)
+        {
+            if (obj == null || GetType() != obj.GetType()) { return false; }
+            MeterReadingWithLocation other = (MeterReadingWithLocation)obj;
+            return ResourceType == other.ResourceType && Date == other.Date && Value == other.Value && Location == other.Location && ApartmentNumber == other.ApartmentNumber;
+        }
+
+        public override int GetHashCode()
+        {
+            return ResourceType.GetHashCode() ^ Date.GetHashCode() ^ Value.GetHashCode();
+        }
     }
 }
