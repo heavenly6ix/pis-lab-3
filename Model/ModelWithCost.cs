@@ -41,11 +41,6 @@ namespace Model
             MeterReadingWithCost other = (MeterReadingWithCost)obj;
             return ResourceType == other.ResourceType && Date == other.Date && Value == other.Value && UnitCost == other.UnitCost && TotalCost == other.TotalCost;
         }
-
-        public override int GetHashCode()
-        {
-            return ResourceType.GetHashCode() ^ Date.GetHashCode() ^ Value.GetHashCode();
-        }
     }
 }
 

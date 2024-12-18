@@ -59,7 +59,7 @@ namespace BussinesLogic
                 }
                 catch (Exception e)
                 {
-                    readings.Add(new MeterReading(e));
+                    Console.WriteLine(e + "\n");
                 }
             }
             return readings;

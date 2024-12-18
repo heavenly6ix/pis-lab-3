@@ -37,10 +37,5 @@ namespace Model
             MeterReadingWithLocation other = (MeterReadingWithLocation)obj;
             return ResourceType == other.ResourceType && Date == other.Date && Value == other.Value && Location == other.Location && ApartmentNumber == other.ApartmentNumber;
         }
-
-        public override int GetHashCode()
-        {
-            return ResourceType.GetHashCode() ^ Date.GetHashCode() ^ Value.GetHashCode();
-        }
     }
 }

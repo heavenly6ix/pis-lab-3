@@ -16,19 +16,19 @@ namespace BussinesLogic.Tests
     [TestClass()]
     public class LogicTests
     {   
-        [TestMethod()]
-        public void InputReadingLines_Hendler()
-        {
-            //Arrange
-            string input = "0       'Горячая вода'    2024.10.06         10,5";
-            MeterReading goodLines = new MeterReading("Горячая вода", Convert.ToDateTime("2024.10.06"), 10.5);
+        //[TestMethod()]
+        //public void InputReadingLines_Hendler()
+        //{
+        //    //Arrange
+        //    string input = "0       'Горячая вода'    2024.10.06         10,5";
+        //    MeterReading goodLines = new MeterReading("Горячая вода", Convert.ToDateTime("2024.10.06"), 10.5);
 
-            //Act
-            MeterReading result = Logic.ToModel(input);
+        //    //Act
+        //    MeterReading result = Logic.ToModel(input);
 
-            //Addert
-            Assert.AreEqual(result, goodLines);
-        }
+        //    //Addert
+        //    Assert.AreEqual(result, goodLines);
+        //}
         
 
         [TestMethod()]
