@@ -1,4 +1,7 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿// This is a personal academic project. Dear PVS-Studio, please check it.
+
+// PVS-Studio Static Code Analyzer for C, C++, C#, and Java: https://pvs-studio.com
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using BussinesLogic;
 using System;
 using System.Collections.Generic;
@@ -26,8 +29,6 @@ namespace BussinesLogic.Tests
             //Addert
             Assert.AreEqual(result, goodLines);
         }
-
-
         
 
         [TestMethod()]
